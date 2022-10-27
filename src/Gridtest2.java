@@ -26,6 +26,7 @@ public class Gridtest2 {
 		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.55.104:4444"),caps);
 		//
 		driver.get("https://www.udemy.com/");
+		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
 		//driver.findElement(By.name("q"));
 		driver.close();

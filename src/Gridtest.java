@@ -27,7 +27,7 @@ public class Gridtest {
 		driver.get("https://google.com");
 		System.out.println(driver.getTitle());
 		driver.findElement(By.name("q"));
-		
+		driver.close();
 	}
 
 }
